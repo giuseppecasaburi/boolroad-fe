@@ -1,0 +1,87 @@
+const viaggi = [
+// Viaggi in corso
+{
+id: 1,
+meta: "Roma",
+partenza: "2025-01-15",
+ritorno: "2025-02-05",
+tutor: "Mario Rossi",
+partecipanti: [
+{ nome: "Luigi Bianchi", telefono: "1234567890", email: "luigi@example.com", codiceFiscale: "LGBNCH80A01H501Z", contattoEmergenza: { nome: "Marco Bianchi", relazione: "Fratello", telefono: "0987654321" } }
+]
+},
+{
+id: 2,
+meta: "Parigi",
+partenza: "2025-01-20",
+ritorno: "2025-02-10",
+tutor: "Anna Bianchi",
+partecipanti: [
+{ nome: "Giovanna Rossi", telefono: "2345678901", email: "giovanna@example.com", codiceFiscale: "GVRRSS85B02H501Z", contattoEmergenza: { nome: "Paolo Rossi", relazione: "Padre", telefono: "1122334455" } }
+]
+},
+
+// Viaggi futuri
+{
+id: 3,
+meta: "Tokyo",
+partenza: "2025-06-10",
+ritorno: "2025-06-30",
+tutor: "Francesca Rizzo",
+partecipanti: [
+{ nome: "Stefano Verdi", telefono: "3456789012", email: "stefano@example.com", codiceFiscale: "STVVRD90C03H501Z", contattoEmergenza: { nome: "Laura Verdi", relazione: "Madre", telefono: "6677889900" } }
+]
+},
+{
+id: 4,
+meta: "New York",
+partenza: "2025-07-05",
+ritorno: "2025-07-25",
+tutor: "Stefano De Luca",
+partecipanti: [
+{ nome: "Martina Gallo", telefono: "4567890123", email: "martina@example.com", codiceFiscale: "MTNGLL92D04H501Z", contattoEmergenza: { nome: "Andrea Gallo", relazione: "Fratello", telefono: "7788990011" } }
+]
+},
+{
+id: 5,
+meta: "Sydney",
+partenza: "2025-08-15",
+ritorno: "2025-09-05",
+tutor: "Martina Ferrari",
+partecipanti: [
+{ nome: "Elena Neri", telefono: "5678901234", email: "elena@example.com", codiceFiscale: "ELNNRI93E05H501Z", contattoEmergenza: { nome: "Marco Neri", relazione: "Padre", telefono: "8844556677" } }
+]
+},
+{
+id: 6,
+meta: "Dubai",
+partenza: "2025-09-10",
+ritorno: "2025-09-30",
+tutor: "Alessandro Moretti",
+partecipanti: [
+{ nome: "Giovanni Russo", telefono: "6789012345", email: "giovanni@example.com", codiceFiscale: "GVNRSS94F06H501Z", contattoEmergenza: { nome: "Luca Russo", relazione: "Cugino", telefono: "9900112233" } }
+]
+},
+{
+id: 7,
+meta: "Rio de Janeiro",
+partenza: "2025-10-20",
+ritorno: "2025-11-10",
+tutor: "Valentina Russo",
+partecipanti: [
+{ nome: "Claudia Ferrara", telefono: "7890123456", email: "claudia@example.com", codiceFiscale: "CLDFRR95G07H501Z", contattoEmergenza: { nome: "Francesca Ferrara", relazione: "Madre", telefono: "2211334455" } }
+]
+},
+{
+id: 8,
+meta: "Berlino",
+partenza: "2025-11-15",
+ritorno: "2025-12-05",
+tutor: "Giovanni Gallo",
+partecipanti: [
+{ nome: "Paolo Moretti", telefono: "8901234567", email: "paolo@example.com", codiceFiscale: "PLMRTT96H08H501Z", contattoEmergenza: { nome: "Silvia Moretti", relazione: "Sorella", telefono: "3344556677" } }
+]
+}
+];
+
+console.log(viaggi);
