@@ -1,8 +1,17 @@
 import TravelerCard from "../components/TravelerCard";
-import partecipanti from "../data/DataVoyager";
+import viaggiatori from "../data/DataVoyager";
 import viaggi from "../data/DataTravel";
 
 function SingleTravel() {
+
+    const partecipanti = viaggiatori.filter((curTraveler) =>{
+
+        if(viaggi[0].partecipanti_id.includes(curTraveler.id)){
+
+            return curTraveler;
+            
+        }
+    })
 
 
     return (
