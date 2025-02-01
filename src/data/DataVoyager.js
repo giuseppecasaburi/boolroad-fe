@@ -50,3 +50,5 @@ const partecipanti = [
     { id: 49, nome: "Roberta", cognome: "Mancini", email: "roberta.mancini@example.com", numero: "7788990011", codiceFiscale: "MNCDBT83M01H502S" },
     { id: 50, nome: "Giuseppe", cognome: "Luigi", email: "giuseppe.luigi@example.com", numero: "8899001122", codiceFiscale: "LGSPSP87M01H502T" },
 ]
+
+export default partecipanti;

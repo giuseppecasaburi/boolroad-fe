@@ -1,10 +1,10 @@
 import { NavLink } from "react-router-dom";
 
-function Homepage () {
+function Homepage() {
 
-    return(
+    return (
         <>
-        <h1>home</h1>
+            <h1>home</h1>
         </>
     )
 };

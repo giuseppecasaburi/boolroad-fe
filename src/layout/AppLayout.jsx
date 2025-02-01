@@ -1,7 +1,6 @@
 import { Outlet } from "react-router-dom"
-
-import Homepage from "../pages/Homepage"
 import SingleTravel from "../pages/SingleTravel"
+import Homepage from "../pages/Homepage"
 import Header from "../components/Header";
 
 function AppLayout () {
@@ -10,7 +9,7 @@ function AppLayout () {
         <>
         <Header/>
         <Outlet/>
-        <footer>Social</footer>
+        {/* <footer>Social</footer> */}
         </>
     )
 

@@ -10,3 +10,5 @@ const viaggi = [
     contatto_Emergenza: "lino Banfi"
     },
 ]
+
+export default viaggi;
