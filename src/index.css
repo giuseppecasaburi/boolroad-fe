@@ -1,6 +1,47 @@
 
-.ms-border{
 
-    border: 2px solid blue;
-}
-
+.ms-card {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    background-color: #fff;
+  }
+  
+  /* Intestazione della card */
+  .ms-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .ms-card-header h2 {
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  .ms-toggle-btn {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .ms-toggle-btn:hover {
+    background-color: #45a049;
+  }
+  
+  /* Dettagli nascosti inizialmente */
+  .ms-card-details {
+    margin-top: 10px;
+  }
+  
+  .ms-card-details p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #555;
+  }

@@ -1,20 +1,29 @@
+import { useState } from "react";
 
 function TravelerCard({ traveler }) {
 
-    return (
-        <>
-            <div  className="card col my-3 card-width" >
-                <div className="card-header">
-                    {traveler.nome} {traveler.cognome}
-                </div>
-                <ul className="list-group list-group-flush">
-                    <li className="list-group-item">{traveler.email}</li>
-                    <li className="list-group-item">{traveler.numero}</li>
-                    <li className="list-group-item">{traveler.codiceFiscale}</li>
-                </ul>
-            </div>
-        </>
-    )
+    const [isOpen, setIsOpen] = useState(false);
+
+  const toggleDetails = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <div className="ms-card">
+      <div className="ms-card-header">
+        <h2>{traveler.nome} {traveler.cognome}</h2>
+        <button onClick={toggleDetails} className="ms-toggle-btn">
+          {isOpen ? 'Nascondi Dettagli' : 'Mostra Dettagli'}
+        </button>
+      </div>
+      {isOpen && (
+        <div className="ms-card-details">
+          <p>Email: {traveler.email}</p>
+          <p>Telefono: {traveler.nome}</p>
+        </div>
+      )}
+    </div>
+  );
 }
 
 export default TravelerCard;
