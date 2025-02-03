@@ -5,18 +5,20 @@ import SingleTravel from "./pages/SingleTravel"
 
 
 function App() {
- 
+
 
   return (
     <>
-     <BrowserRouter>
+      <BrowserRouter>
         <Routes>
-          <Route element={<AppLayout/>}>
-            <Route index element={<Homepage/>}/>
-            <Route path="/travel" element={<SingleTravel/>}/>
+          <Route element={<AppLayout />}>
+            <Route index element={<Homepage />} />
+            <Route path="/travel">
+              <Route path=":id" element={<SingleTravel />} />
+            </Route>
           </Route>
         </Routes>
-     </BrowserRouter>
+      </BrowserRouter>
     </>
   )
 }
