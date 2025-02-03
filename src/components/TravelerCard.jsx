@@ -3,7 +3,7 @@ function TravelerCard({ traveler }) {
 
     return (
         <>
-            <div className="card col my-3 card-width" >
+            <div  className="card col my-3 card-width" >
                 <div className="card-header">
                     {traveler.nome} {traveler.cognome}
                 </div>

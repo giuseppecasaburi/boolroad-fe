@@ -5,10 +5,11 @@ import { useNavigate, useParams } from "react-router-dom";
 
 function SingleTravel() {
 
-    const {id} = useParams();
+    const { id } = useParams();
     const idViaggio = parseInt(id) - 1;
-    
-    
+    const navigate = useNavigate();
+
+
 
     const partecipanti = viaggiatori.filter((curTraveler) => {
 
@@ -20,7 +21,7 @@ function SingleTravel() {
     })
 
 
-   
+
 
     return (
         <>
@@ -46,14 +47,13 @@ function SingleTravel() {
                     <div className="row row-cols-2 row-cols-lg-3 justify-content-around ">
                         {partecipanti.map((curTraveler) => {
                             return (
-                                <>
-                                    <TravelerCard
-                                        key={curTraveler.id}
-                                        traveler={curTraveler}
-                                    />
-                                </>
+                                <TravelerCard
+                                    key={curTraveler.id}
+                                    traveler={curTraveler}
+                                />
                             )
                         })}
+                        
                     </div>
                 </div>
 
